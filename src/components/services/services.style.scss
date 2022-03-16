@@ -1,0 +1,51 @@
+.sekcija {
+    text-align: center;
+}
+
+.heading {
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+
+.paslaugos {
+    display: grid;
+    grid-template-columns: repeat(3, [col-start] 350px [col-end]);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5em 0.8em;
+    justify-content: center;
+    align-content: center;
+
+    .item {
+        width: 350px;
+        height: auto;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 25% 75%;
+    
+        .ikona {
+            line-height: 6.4;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #064acb;
+            box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+    
+            .svg-inline--fa {
+                font-size: 40px;
+                color: #fff;
+            }
+        }
+    
+        .aprasymas {
+            padding-left: 1rem;
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .paslaugos {
+        grid-template-columns: repeat(auto-fill, [col-start] 350px [col-end]);
+
+    }
+  }

@@ -1,0 +1,50 @@
+.kontaktai {
+    display: grid;
+    /* grid-gap: 0 3.8em; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    height: 500px;
+}
+
+.kontaktaiImg {
+    grid-column: 1;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kontaktaiForm {
+    grid-column: 2;
+    width: 100%;
+    padding: 20px 45px 20px 45px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #000;
+    background-color: #f79f24;
+}
+
+.kontaktaiForm span {
+    font-size: 12px;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .kontaktai {
+        display: grid;
+        grid-gap: 0 3.8em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .kontaktaiForm {
+        grid-column: 1;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
